@@ -28,6 +28,6 @@ sonarqube {
     properties {
     property "sonar.projectKey", "squ_cefa566c04eb739c0697ee0c80375e2ca972be5e"
     property "sonar.projectName", "spring-boot-starter-web"
-    property "sonar.host.url", "http://13.126.76.64:9000"
+    property "sonar.host.url", "http://65.0.71.40:9000"
   }
 }
