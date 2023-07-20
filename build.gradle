@@ -26,8 +26,8 @@ test {
 
 sonarqube {
     properties {
-        property "sonar.sourceEncoding", "UTF-8"
-                property "sonar.projectName", "springboot-tomcat-gradle-war"
-
-    }
+    property "sonar.projectKey", "squ_cefa566c04eb739c0697ee0c80375e2ca972be5e"
+    property "sonar.projectName", "spring-boot-starter-web"
+    property "sonar.host.url", "http://13.126.76.64:9000"
+  }
 }
