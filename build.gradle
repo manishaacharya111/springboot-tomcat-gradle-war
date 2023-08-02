@@ -23,11 +23,11 @@ test {
     useJUnitPlatform()
 }
 sonarqube {
-    properties {
-        property "sonar.sourceEncoding", "UTF-8"
-          -Dsonar.projectKey=test \
-          -Dsonar.host.url=http://3.111.33.152:9000 \
-          -Dsonar.login=sqp_edbc479549e4114698b8f98d0d253569c846e84a                
-    }
+properties {
+    property "sonar.projectName", "test"
+    property "sonar.projectKey", "test"
+    property "sonar.host.url", "http://3.111.33.152:9000"
+    property "sonar.sourceEncoding", "UTF-8"
+}
 }
 
