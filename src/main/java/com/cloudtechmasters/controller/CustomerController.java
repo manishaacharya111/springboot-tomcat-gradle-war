@@ -18,6 +18,7 @@ public class CustomerController {
     //list all customers
     @GetMapping("/listallcustomers")
     public List<Customer> getAllCustomers(){
+        System.out.println("getAllCustomers is called by /getAllCustomers endpoint")
         return Arrays.asList(new Customer("vamsi","001","INDIA","AP","retail"));
     }
 
