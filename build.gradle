@@ -4,6 +4,7 @@ plugins {
     id 'java'
     id 'war'
     id "org.sonarqube" version "3.4.0.2513"
+    id 'com.palantir.docker' version '0.22.1'
 }
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
@@ -12,7 +13,12 @@ sourceCompatibility = '1.8'
 repositories {
     mavenCentral()
 }
-
+docker {
+	name "mycoolapp"
+	dockerfile file('src/Dockerfile')
+	copySpec.from(jar).rename(".*","app.jar")
+	buildArgs(['JAR_FILE': "app.jar"])
+}
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
