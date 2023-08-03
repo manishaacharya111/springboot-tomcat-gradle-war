@@ -16,8 +16,8 @@ repositories {
 docker {
 	name "mycoolapp"
 	dockerfile file('src/Dockerfile')
-	copySpec.from(jar).rename(".*","app.jar")
-	buildArgs(['JAR_FILE': "app.jar"])
+	copySpec.from(war).rename(".*","app.war")
+	buildArgs(['WAR_FILE': "app.war"])
 }
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
