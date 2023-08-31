@@ -3,3 +3,4 @@ VOLUME /tmp
 ARG WAR_FILE
 COPY ${WAR_FILE} app.jar
 ENTRYPOINT {"java", "war", "/app.war"}
+EXPOSE 3000
