@@ -38,5 +38,4 @@
     "cpu": "1024",
     "volumes": [],
     "placementConstraints": [],
-    "tags": []
 }
