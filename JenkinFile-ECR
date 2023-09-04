@@ -1,5 +1,6 @@
 pipeline {
     environment {
+region = "ap-south-1"'
 registry = "public.ecr.aws/o8u3n5l7/mycoolapp"
 registryCredential = '3d6bd144-f532-468f-91c1-f26b23061be9'
 dockerImage = ''
