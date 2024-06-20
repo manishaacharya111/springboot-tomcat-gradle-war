@@ -34,7 +34,7 @@ sonarqube {
 properties {
     property "sonar.projectName", "test"
     property "sonar.projectKey", "test"
-    property "sonar.host.url", "http://13.233.100.127:9000/"
+    property "sonar.host.url", "http://13.127.119.228/:9000/"
     property "sonar.sourceEncoding", "UTF-8"
 }
 }
